@@ -1,0 +1,6 @@
+./bundle -o ./bundles/final/ k8s/cdk cni/flannel cri/containerd cri/docker legacy-storage/ceph-remote -c stable
+./bundle -o ./bundles/final/ k8s/cdk cni/flannel cri/containerd cri/docker legacy-storage/ceph-remote -c edge -n santhosh
+./bundle -o ./bundles/cdk-flannel k8s/cdk cni/flannel cri/containerd legacy-storage/ceph-remote
+./bundles/cdk-flannel k8s/cdk cni/flannel cri/containerd cri/docker legacy-storage/ceph-remote
+./bundles/cdk-flannel k8s/cdk cni/flannel cri/containerd cri/docker legacy-storage/ceph-remote overlays/openstack-overlay.yaml
+./bundles/cdk-converged-flannel k8s/cdk-converged cni/flannel legacy-storage/ceph

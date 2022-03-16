@@ -1,0 +1,11 @@
+# This is an incomplete bundle fragment. Do not attempt to deploy.
+
+saas:
+  consumecephmonadmin:
+    url: maas-controller:admin/ceph.offercephmonadmin
+  consumecephmonclient:
+    url: maas-controller:admin/ceph.offercephmonclient
+
+relations:
+- - kubernetes-control-plane:ceph-storage
+  - consumecephmonadmin:admin

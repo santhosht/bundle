@@ -8,7 +8,7 @@ applications:
     num_units: 2
     options:
       channel: 1.23/edge
-    constraints: "cores=2 mem=4G root-disk=16G"
+    constraints: "cores=4 mem=12G root-disk=100G"
     annotations:
       "gui-x": "800"
       "gui-y": "850"
@@ -33,7 +33,7 @@ applications:
     options:
       channel: 1.23/edge
     expose: true
-    constraints: "cores=4 mem=4G root-disk=16G"
+    constraints: "cores=8 mem=12G root-disk=100G"
     annotations:
       "gui-x": "90"
       "gui-y": "850"
